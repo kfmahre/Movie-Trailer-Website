@@ -1,4 +1,4 @@
-import fresh_tomatoes
+import index
 import media
 
 lava = media.Movie("Lava",
@@ -32,4 +32,4 @@ dune = media.Movie("Dune",
                    "https://www.youtube.com/watch?v=WHh8dzxTSNw")
 
 movies = [lava, rogue_one, star_trek_beyond, the_revenant, ghostbusters, dune]
-fresh_tomatoes.open_movies_page(movies)
+index.open_movies_page(movies)
