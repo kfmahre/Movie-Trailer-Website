@@ -1,6 +1,12 @@
 import webbrowser
 
 class Video():
+    """ Summary of Video class
+        Parent Class of Movie and TvShow
+        Attributes:
+            title: title of video
+            duration: commented out, but it's for movie/episode duration
+    """
     def __init__(self, title):
         self.title = title
 #        self.duration = duration
@@ -8,6 +14,14 @@ class Video():
         print("Title - "+self.title)
 
 class Movie(Video):
+    """ Summary of Movie class
+        A class for displaying data about movies
+        Attributes:
+            title: inherited from parent class Video
+            storyline: summary about what the movie is about
+            poster-image: url for the poster art image for the movie
+            trailer: youtube url for a trailer video for the movie
+    """
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]
     
     def __init__(self, title, movie_storyline, poster_image, trailer_youtube):
